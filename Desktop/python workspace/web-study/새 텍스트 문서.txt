@@ -1,0 +1,45 @@
+html
+마크업 언어 (태그문법)
+<> 안에 어떠한 문자들이 들어있다.
+HTML , XML
+화면에 뼈대를 만드는 작업이다.
+css로 옷을 입힌다.
+여는태그 <이름 속성이름="속성값"> 닫는태그</이름> 한쌍이다.
+ex) <div style="color:red"> (css문법)
+
+확장자를 html로 하면 골격을 만들때 html:5로 편하게 골격을 만들 수 있다.
+<!DOCTYPE html> : 닫는게 태그 없다. 최상단에 내가 html에 파일을 쓰고있다고 말하는것이다.
+<html> : 최상단 or 부모 라고 부름
+<head> (자식 태그) 사람의 머리를 뜻한다. 성격과 특징들을 넣는다.
+    <meta charset="UTF-8"> (인코딩 utf-8) 한글도 보여줄것이다.
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 반응형을 도와주는 웹페이지다.
+    <meta og:  페이지의 설명과 이름을 넣을 수 있다.    
+     트래픽 코드 (얼마나 들렸는지 등등도 헤드에 넣음)
+     자바스크립트 css도 넣음.
+    <title>Document</title> (사이트 제목 ex:클래스 101 -NO.1 온라인클래스 ( 위에 뜨는거))
+</head>
+<body> (자식 태그) 화면을 그려주는 태그
+    <h1>투두리스트</h1> h1~h6 (크기) 1~^까지있다.
+</body>
+</html>
+
+
+
+화면을 그리는 태그들
+<div> 가로를 한줄 (  css로 옷스타일을 입혀줘야함)
+<h1> ~ h6 
+<p> 긴~ 문장을 쓸 때 </p>
+    <p> 긴 문장을 쓸때</p>
+    <p> <span style="color: red;">문장 </span>긴 문장을 쓸때</p>
+span은 바꾸고 싶은 부분만 쓸때 p는 긴문장
+<ul> 리스트
+	<li>1<li> 한세트로 씀 ul과
+	<li>2<li>
+<ul>
+<br/> :띄어쓰기
+<hr/>: 한줄 긋고 띄어쓰기
+    <input type="text" /> : 인풋 텍스트 (숫자랑 영어한글다가능)
+    <input type="number" /> 인풋 넘버 (숫자만)
+    <button>확인</button>(버튼)
+<img src="주소"/> 이미지 올리기 (알아서닫힘)
