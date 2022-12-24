@@ -60,3 +60,77 @@ css : 스타일언어 어디에 항상 종속되어있어야 한다. csascandig 
     </style>
 
     <link rel="stylesheet" href="./main.css"/>이렇게 파일을 불러와서 할 수 있음 (관리에 용이함) 습관들일것.
+html파일에
+<body>
+    <p>대한<span>민국</span> </p>
+</body>
+css파일에  p태그에서 span에 red칼라주기       
+p > span {                    (p 태그 안에있는 span에 색깔)
+    color: red;
+}
+p > .title { 
+    color: aqua;
+}
+html 파일에
+<body>
+	<p>대한<span>민국</span> </p>
+	<span class=title> ㅎㅇㅎㅇ </span>  종속성 관계가 깨지진 않는지 잘봐야한다. 색깔이 부여되지않음.
+	<div class="layout"></div>
+</body>
+css 파일에
+.layout{
+    background-color: yellow; 뒷배경 색깔
+    width:  500px; 가로 
+    height: 300px; 세로
+    border: 2px solid #000;  (경계선 2픽셀로 solid:실전 , dotted: 점선 색깔이 #000
+    border-radius : 10px;  굴곡지게 
+    text-align: center; (텍스트를 어디에 위치시킬지)
+}
+.title1 {
+    color: red;
+    font-size: 150%; 
+    font-weight: 900; : 두께
+    margin-top: 100px; ( (부모로부터) 탑에서부터 몇 픽셀 떨어질지)
+    padding-top: 50px; ( (자기기준으로) 얼마나 떨어질지.)
+}
+글짜 폰트 바꾸기
+사이트는 : https://fonts.google.com/
+헤드에 
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap'); </style>
+
+css에 
+    font-family: 'Rubik Gemstones', cursive;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
