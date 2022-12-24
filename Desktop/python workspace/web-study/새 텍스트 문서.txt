@@ -27,7 +27,7 @@ ex) <div style="color:red"> (css문법)
 
 
 화면을 그리는 태그들
-<div> 가로를 한줄 (  css로 옷스타일을 입혀줘야함)
+<div> 가로를 한줄 (  css로 옷스타일을 입혀줘야함) </div>
 <h1> ~ h6 
 <p> 긴~ 문장을 쓸 때 </p>
     <p> 긴 문장을 쓸때</p>
@@ -43,3 +43,20 @@ span은 바꾸고 싶은 부분만 쓸때 p는 긴문장
     <input type="number" /> 인풋 넘버 (숫자만)
     <button>확인</button>(버튼)
 <img src="주소"/> 이미지 올리기 (알아서닫힘)
+
+css : 스타일언어 어디에 항상 종속되어있어야 한다. csascandig style sheets ==css
+선택자 class, id  
+ <p class="title" id="title" style="color:red">긴 문장을 작성 </p> 
+ <p class="title1 title2 title3" id="title">긴 문장을 작성 </p> 클래스는 여러가지 가능, id 는 한가지만 (고유한이름)
+
+헤드에 
+    <style>
+        #title{                     (아이디가 타이틀인 애를 칼라 aqua를 주겠다)(#은 아이디, .은 클래스를 뜻함) 
+            color: aqua;
+        }
+        .title2{
+            font-size: 150%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./main.css"/>이렇게 파일을 불러와서 할 수 있음 (관리에 용이함) 습관들일것.
